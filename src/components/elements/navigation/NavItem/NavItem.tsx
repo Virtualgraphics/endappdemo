@@ -1,48 +1,61 @@
-import React from 'react'
-import {
-    Flex,
-    Text,
-    Icon,
-    Link,
-    Menu,
-    MenuButton,
-    MenuList
-} from '@chakra-ui/react'
+import { Box, Link, Popover, PopoverContent, PopoverTrigger, Stack, useColorModeValue } from '@chakra-ui/react';
+import { ChevronDownIcon } from '@chakra-ui/icons';
+import { FC } from 'react';
+import { ISubNav } from '../SubNav/SubNav';
+import { SubNav } from '../SubNav';
+import NextLink from 'next/link';
+import { useRouter } from 'next/router';
 
+const NavItem: FC<ISubNav> = ({ label, children, href }) => {
+  const linkColor = useColorModeValue('gray.600', 'gray.400');
+  const linkActiveColor = useColorModeValue('gray.800', 'white');
+  const router = useRouter();
+  const isCurrentPath = router.asPath === href || (href !== '/' && router.pathname.startsWith(href || ''));
 
-export default function NavItem({ icon, title, description, active, navSize }) {
-    return (
-        <Flex
-            mt={30}
-            flexDir="column"
-            w="100%"
-            alignItems={navSize == "small" ? "center" : "flex-start"}
-        >
-            <Menu placement="right">
+  return (
+    <Popover trigger={'hover'} placement={'bottom-start'}>
+      <PopoverTrigger>
+        <Box>
+          <Box
+            fontSize={15}
+            fontWeight={500}
+            color={isCurrentPath ? linkActiveColor : linkColor}
+            _hover={{
+              textDecoration: 'none',
+              color: linkActiveColor,
+            }}
+            cursor="pointer"
+          >
+            {children ? (
+              <>
+                {label} <ChevronDownIcon />
+              </>
+            ) : (
+              <NextLink href={href || '/'}>
                 <Link
-                    backgroundColor={active && "#AEC8CA"}
-                    p={3}
-                    borderRadius={8}
-                    _hover={{ textDecor: 'none', backgroundColor: "#AEC8CA" }}
-                    w={navSize == "large" && "100%"}
+                  _hover={{
+                    textDecoration: 'none',
+                  }}
                 >
-                    <MenuButton w="100%">
-                        <Flex>
-                            <Icon as={icon} fontSize="xl" color={active ? "#82AAAD" : "gray.500"} />
-                            <Text ml={5} display={navSize == "small" ? "none" : "flex"}>{title}</Text>
-                        </Flex>
-                    </MenuButton>
+                  {label}
                 </Link>
-                <MenuList
-                    py={0}
-                    border="none"
-                    w={200}
-                    h={200}
-                    ml={5}
-                >
-                    
-                </MenuList>
-            </Menu>
-        </Flex>
-    )
-}
+              </NextLink>
+            )}
+          </Box>
+        </Box>
+      </PopoverTrigger>
+
+      {children && (
+        <PopoverContent border={0} boxShadow={'xl'} p={4} rounded={'xl'} minW={'sm'}>
+          <Stack>
+            {children.map((child) => (
+              <SubNav key={child.label} {...child} />
+            ))}
+          </Stack>
+        </PopoverContent>
+      )}
+    </Popover>
+  );
+};
+
+export default NavItem;
