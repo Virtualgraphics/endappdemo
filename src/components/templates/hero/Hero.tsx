@@ -1,17 +1,27 @@
 import {
     Box,
     Button,
+    Container,
+    HStack,
     Heading,
     Img,
     Link,
     Stack,
     Text,
+    Flex,
+    Icon,
+    SimpleGrid,
+    useColorModeValue,
    useColorModeValue as mode,
  } 
  
   from '@chakra-ui/react'
   import * as React from 'react'
   import { HiPlay } from 'react-icons/hi'
+  import { FaArrowRight } from 'react-icons/fa'
+import CategoryCard from './CategoryCard'
+import { categories } from './_data'
+
   
   const Hero = () => {
     return (
@@ -74,6 +84,7 @@ import {
           </Box>
           <Box pos="relative" w={{ base: 'full', lg: '560px' }} h={{ base: 'auto', lg: '560px' }}>
             <Img
+            borderRadius={30}
               w="full"
               pos="relative"
               zIndex="1"
@@ -83,6 +94,7 @@ import {
               alt="Screening talent"
             />
             <Box
+             borderRadius={30}
               pos="absolute"
               w="100%"
               h="100%"
@@ -93,6 +105,42 @@ import {
           </Box>
         </Stack>
       </Box>
+
+      <Box
+    maxW="7xl"
+    mx="auto"
+    px={{ base: '4', md: '8', lg: '12' }}
+    py={{ base: '6', md: '8', lg: '12' }}
+  >
+    <Stack spacing={{ base: '6', md: '8', lg: '12' }}>
+      <Flex
+        justify="space-between"
+        align={{ base: 'start', md: 'center' }}
+        direction={{ base: 'column', md: 'row' }}
+      >
+        <Heading size="lg">Our great Games, Animation and Comics</Heading>
+        <HStack spacing={{ base: '2', md: '3' }}>
+          <Link
+            fontSize={{ base: 'md', md: 'lg' }}
+            fontWeight="bold"
+            color={useColorModeValue('blue.500', 'blue.300')}
+          >
+            See all Projects
+          </Link>
+          <Icon
+            as={FaArrowRight}
+            color={useColorModeValue('blue.500', 'blue.300')}
+            fontSize={{ base: 'sm', md: 'md' }}
+          />
+        </HStack>
+      </Flex>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={{ base: '8', lg: '16' }}>
+        {categories.map((category) => (
+          <CategoryCard key={category.name} category={category} />
+        ))}
+      </SimpleGrid>
+    </Stack>
+  </Box>
     </Box>
 
     
