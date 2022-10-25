@@ -1,5 +1,5 @@
 import { Box, Container, Flex, HStack } from '@chakra-ui/react';
-import { ColorModeButton, EndappLogo, } from 'components/elements';
+import { ColorModeButton, EndappLogo, NavBar } from 'components/elements';
 import { ConnectButton } from '../ConnectButton';
   
   const Header = () => {
@@ -8,7 +8,7 @@ import { ConnectButton } from '../ConnectButton';
         <Container maxW="container.xl" p={'10px'}>
           <Flex align="center" justify="space-between">
             <EndappLogo />
-            
+           < NavBar />
             <HStack gap={'10px'}>
               <ConnectButton />
               <ColorModeButton />

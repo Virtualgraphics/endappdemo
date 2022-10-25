@@ -1,46 +1,39 @@
 import { ISubNav } from '../SubNav/SubNav';
 
 const NAV_LINKS: ISubNav[] = [
-  { label: 'Home', href: '/' },
+  { label: 'HOME', href: '/' },
   {
-    label: 'Transactions',
-    href: '/transactions',
+    label: 'GAMES',
+    href: '/games',
   },
   {
-    label: 'Transfers',
-    href: '/transfers',
-    children: [
-      {
-        label: 'ERC20',
-        subLabel: 'Get your ERC20 transfers',
-        href: '/transfers/erc20',
-        logo: 'token',
-      },
-      {
-        label: 'NFT',
-        subLabel: 'Get your ERC721 an ERC1155 transfers',
-        href: '/transfers/nft',
-        logo: 'lazyNft',
-      },
-    ],
+    label: 'ANIMATION',
+    href: '/animation',
+    
   },
   {
-    label: 'Balances',
-    href: '/balances',
+    label: 'WEBTOONS',
+    href: '/webtoons',
+    
+  },
+  {
+    label: 'NFT',
+    href: '/nft',
     children: [
       {
-        label: 'ERC20',
-        subLabel: 'Get your ERC20 balances',
-        href: '/balances/erc20',
-        logo: 'token',
+        label: 'MINT NFT',
+        subLabel: 'Mint an NFT',
+        href: '/nft/nftmint',
+        
       },
       {
-        label: 'NFT',
-        subLabel: 'Get your ERC721 an ERC1155 balances',
-        href: '/balances/nft',
-        logo: 'pack',
+        label: 'YOUR NFTS',
+        subLabel: 'See your NFT Collection',
+        href: '/nft/nftbalances',
+       
       },
     ],
+    
   },
 ];
 

@@ -1,5 +1,4 @@
 import { Box, HStack, Image, SimpleGrid, useColorModeValue } from '@chakra-ui/react';
-import { Eth } from '@web3uikit/icons';
 import { FC } from 'react';
 
 
@@ -28,7 +27,7 @@ const NFTCard: FC<INFTCard> = ({ amount, contractType, name, symbol, metadata })
           {contractType}
         </Box>
 
-        <Eth fontSize="20px" />
+        
       </HStack>
       <SimpleGrid columns={2} spacing={4} bgColor={descBgColor} padding={2.5} borderRadius="xl" marginTop={2}>
         <Box>
