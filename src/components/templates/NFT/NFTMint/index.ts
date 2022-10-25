@@ -1,1 +1,1 @@
-export { default as NFTBalances } from './NFTMint';
+export { default as NFTMint } from './NFTMint';

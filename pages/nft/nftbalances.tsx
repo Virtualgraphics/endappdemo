@@ -1,13 +1,13 @@
 import { Default } from 'components/layouts/Default';
-import { GetServerSideProps, NextPage } from 'next';
+import { NFTBalances } from 'components/templates/NFT/NFTBalances';
+import type { NextPage } from 'next';
 
-const NFTBalances: NextPage = (props) => {
-    return (
-      <Default pageName="NFT MINT">
-        <NFTBalances {...props} />
-      </Default>
-    );
-  };
-  
-  
-  export default NFTBalances;
+const NFTBALANCE: NextPage = () => {
+  return (
+    <Default pageName="NFT Balance">
+      <NFTBalances />
+    </Default>
+  );
+};
+
+export default NFTBALANCE

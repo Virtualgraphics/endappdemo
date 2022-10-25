@@ -1,13 +1,13 @@
+import { Default } from 'components/layouts/Default';
+import { Animation } from 'components/templates/animation';
+import type { NextPage } from 'next';
 
+const ANIMATION: NextPage = () => {
+  return (
+    <Default pageName="Animation">
+      <Animation />
+    </Default>
+  );
+};
 
-
-const Animation = () => {
-    return (
-      < h1>
-        ANIMATION
-      </h1>
-    );
-  };
-  
-  
-  export default Animation;
+export default ANIMATION;

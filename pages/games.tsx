@@ -1,13 +1,13 @@
 import { Default } from 'components/layouts/Default';
-import { GetServerSideProps, NextPage } from 'next';
+import { Games } from 'components/templates/games';
+import type { NextPage } from 'next';
 
-const Games: NextPage = (props) => {
-    return (
-      <Default pageName="Games">
-        <Games {...props} />
-      </Default>
-    );
-  };
-  
-  
-  export default Games;
+const GAMES: NextPage = () => {
+  return (
+    <Default pageName="Animation">
+      <Games />
+    </Default>
+  );
+};
+
+export default GAMES;

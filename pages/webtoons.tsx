@@ -1,13 +1,13 @@
 import { Default } from 'components/layouts/Default';
-import { GetServerSideProps, NextPage } from 'next';
+import { Webtoons } from 'components/templates/webtoons';
+import type { NextPage } from 'next';
 
-const Webtoons: NextPage = (props) => {
-    return (
-      <Default pageName="Webtoons">
-        <Webtoons {...props} />
-      </Default>
-    );
-  };
-  
-  
-  export default Webtoons;
+const WEBTOONS: NextPage = () => {
+  return (
+    <Default pageName="Animation">
+      <Webtoons />
+    </Default>
+  );
+};
+
+export default WEBTOONS;
