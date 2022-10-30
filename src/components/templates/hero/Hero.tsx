@@ -20,7 +20,7 @@ import {
   import { HiPlay } from 'react-icons/hi'
   import { FaArrowRight } from 'react-icons/fa'
 import CategoryCard from './CategoryCard'
-import { categories } from './_data'
+
 
   
   const Hero = () => {
@@ -60,7 +60,7 @@ import { categories } from './_data'
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing="4" mt="8">
               <Button size="lg" minW="210px" colorScheme="blue" height="14" px="8">
-                Connect Wallet
+               Get started
               </Button>
               <Button
                 size="lg"
@@ -76,9 +76,9 @@ import { categories } from './_data'
               </Button>
             </Stack>
             <Text mt="8" color={mode('gray.600', 'gray.400')}>
-              Already have an account store?{' '}
+              Find out how it works by checking our{' '}
               <Link href="#" textDecoration="underline">
-                Log in
+                FAQ
               </Link>
             </Text>
           </Box>
@@ -105,47 +105,9 @@ import { categories } from './_data'
           </Box>
         </Stack>
       </Box>
-
-      <Box
-    maxW="7xl"
-    mx="auto"
-    px={{ base: '4', md: '8', lg: '12' }}
-    py={{ base: '6', md: '8', lg: '12' }}
-  >
-    <Stack spacing={{ base: '6', md: '8', lg: '12' }}>
-      <Flex
-        justify="space-between"
-        align={{ base: 'start', md: 'center' }}
-        direction={{ base: 'column', md: 'row' }}
-      >
-        <Heading size="lg">Our great Games, Animation and Comics</Heading>
-        <HStack spacing={{ base: '2', md: '3' }}>
-          <Link
-            fontSize={{ base: 'md', md: 'lg' }}
-            fontWeight="bold"
-            color={useColorModeValue('blue.500', 'blue.300')}
-          >
-            See all Projects
-          </Link>
-          <Icon
-            as={FaArrowRight}
-            color={useColorModeValue('blue.500', 'blue.300')}
-            fontSize={{ base: 'sm', md: 'md' }}
-          />
-        </HStack>
-      </Flex>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={{ base: '8', lg: '16' }}>
-        {categories.map((category) => (
-          <CategoryCard key={category.name} category={category} />
-        ))}
-      </SimpleGrid>
-    </Stack>
-  </Box>
     </Box>
 
-    
-
-        );
+     );
 
 };
 

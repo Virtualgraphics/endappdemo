@@ -1,10 +1,56 @@
 import {} from '@chakra-ui/react';
+import { Container, Stack, Box, Text, Center, Flex, AspectRatio, Wrap, Heading, useColorModeValue as mode } from '@chakra-ui/react';
+import { ContentGrid } from 'components/templates/contentgrid';
+import { Vote } from 'components/templates/vote';
 
 const Animation = () => {
 
     return (
-      <h1>ANIMATION</h1>
-    );
-  };
+      <Box w="100%" > <Flex align="center" justify="center">
+      <Heading
+                    as="h1"
+                    size="xl"
+                    color={mode('blue.600', 'blue.300')}
+                    mt="8"
+                    fontWeight="extrabold"
+                    letterSpacing="tight"
+                  >
+                   Watch our shows and participate in the stories
+                  </Heading>
+                  </Flex>
+                
+
+
+<Flex align="center" justify="center" marginTop={10}>
+  <Flex
+align="center" 
+as='video'
+controls
+autoplay
+src=''
+poster='https://www.virtual-graphics.ch/wp-content/uploads/2022/10/km_trailer01_thumb960.jpg'
+alt='Big Buck Bunny'
+objectFit='contain'
+sx={{
+  aspectRatio: '16/9'
+}}/>
+</Flex>
+
+<Flex align="center" justify="center">
+        <Vote/>
+        
+        </Flex>
+
+<Flex align="center" justify="center">
+        <ContentGrid/>
+        
+        </Flex>
+        
+ </Box>
+    
+    
+);
+};
+
   
   export default Animation;

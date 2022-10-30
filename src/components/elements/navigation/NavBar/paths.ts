@@ -35,6 +35,19 @@ const NAV_LINKS: ISubNav[] = [
     ],
     
   },
+
+  {
+    label: 'MARKETPLACE',
+    href: '/marketplace',
+    
+  },
+
+  {
+    label: 'COMMUNITY',
+    href: '/community',
+    
+  },
+
 ];
 
 export default NAV_LINKS;

@@ -1,4 +1,4 @@
-import { Box, Grid, Heading } from '@chakra-ui/react';
+import { Container, Stack, Box, Text, Flex, Heading, useColorModeValue as mode } from '@chakra-ui/react';
 import { FC, useEffect } from 'react';
 
 
@@ -6,15 +6,21 @@ const NFTBalances= () => {
   
 
   return (
-    <>
-      <Heading size="lg" >
-        NFT BALANCES
-      </Heading>
-     
-     
-        <Box>Looks Like you do not have any NFTs</Box>
-    
-    </>
+  
+       <Box w="100%" > <Flex align="center" justify="center">
+      <Heading
+                    as="h1"
+                    size="xl"
+                    color={mode('blue.600', 'blue.300')}
+                    mt="8"
+                    fontWeight="extrabold"
+                    letterSpacing="tight"
+                  >
+                   Your NFT Balance
+                  </Heading>
+                  
+        </Flex>
+      </Box>
   );
 };
 
