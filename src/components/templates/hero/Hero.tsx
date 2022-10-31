@@ -19,7 +19,7 @@ import {
   import * as React from 'react'
   import { HiPlay } from 'react-icons/hi'
   import { FaArrowRight } from 'react-icons/fa'
-import CategoryCard from './CategoryCard'
+
 
 
   
