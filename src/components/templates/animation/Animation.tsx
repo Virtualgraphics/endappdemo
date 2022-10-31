@@ -26,10 +26,10 @@ const Animation = () => {
 align="center" 
 as='video'
 controls
-autoplay
+
 src=''
 poster='https://www.virtual-graphics.ch/wp-content/uploads/2022/10/km_trailer01_thumb960.jpg'
-alt='Big Buck Bunny'
+
 objectFit='contain'
 sx={{
   aspectRatio: '16/9'

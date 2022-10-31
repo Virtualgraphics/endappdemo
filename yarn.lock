@@ -1754,7 +1754,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.21.0":
+"@typescript-eslint/parser@npm:^5.21.0, @typescript-eslint/parser@npm:^5.41.0":
   version: 5.41.0
   resolution: "@typescript-eslint/parser@npm:5.41.0"
   dependencies:
@@ -2037,9 +2037,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001406":
-  version: 1.0.30001426
-  resolution: "caniuse-lite@npm:1.0.30001426"
-  checksum: e8b9c14ee33410d95b27da619f50648f373a7be712748970643f25d95fa80687b4755ba365f34a7a1cea00f9137193943aa6e742eedf0a4d7857f83809f49435
+  version: 1.0.30001427
+  resolution: "caniuse-lite@npm:1.0.30001427"
+  checksum: 7b21a7d1f10c07130cecb7e7c7c38fd031f3dbd49afaee53fa4bb07355f9765686cad14f6296fbb49838f525c35292278b2c5ee9109c363edea5e134514ab6bb
   languageName: node
   linkType: hard
 
@@ -2061,6 +2061,13 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
+  languageName: node
+  linkType: hard
+
+"classnames@npm:^2.2.5":
+  version: 2.3.2
+  resolution: "classnames@npm:2.3.2"
+  checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
   languageName: node
   linkType: hard
 
@@ -2280,15 +2287,18 @@ __metadata:
     "@types/node": 18.11.3
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
+    "@typescript-eslint/parser": ^5.41.0
     eslint: 8.26.0
     eslint-config-next: 12.3.1
     framer-motion: 6
+    framer-motion-carousel: ^2.0.1
     keen-slider: ^6.8.3
     next: 12.3.1
     react: 18.2.0
     react-dom: 18.2.0
     react-icons: ^4.6.0
-    typescript: 4.8.4
+    react-responsive-carousel: ^3.2.23
+    typescript: ^4.8.4
   languageName: unknown
   linkType: soft
 
@@ -2738,7 +2748,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:6":
+"framer-motion-carousel@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "framer-motion-carousel@npm:2.0.1"
+  dependencies:
+    framer-motion: ^6.3.11
+  checksum: 6a9ec7571d203f71f2bb40880b676719565ca93fb1b84f9f20f69c602862bd60f9b4dabebf684aeedc8f24c7710c5b3d1bb036bfc20d52b78dc2673d04cf34e5
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:6, framer-motion@npm:^6.3.11":
   version: 6.5.1
   resolution: "framer-motion@npm:6.5.1"
   dependencies:
@@ -3702,7 +3721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3747,6 +3766,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-easy-swipe@npm:^0.0.21":
+  version: 0.0.21
+  resolution: "react-easy-swipe@npm:0.0.21"
+  dependencies:
+    prop-types: ^15.5.8
+  checksum: 225f12a9dd410db1c790220867ab1eb58e2ef0a2bdae8541330805fc5b9905e242ab307b019f9aaed76473849a753f363baff03fa8a77e7a1860d7b41dc83ec0
   languageName: node
   linkType: hard
 
@@ -3825,6 +3853,17 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 2c7fe9cbd766f5e54beb4bec2e2efb2de3583037b23fef8fa511ab426ed7f1ae992382db5acd8ab5bfb030a4b93a06a2ebca41377d6eeaf0e6791bb0a59616a4
+  languageName: node
+  linkType: hard
+
+"react-responsive-carousel@npm:^3.2.23":
+  version: 3.2.23
+  resolution: "react-responsive-carousel@npm:3.2.23"
+  dependencies:
+    classnames: ^2.2.5
+    prop-types: ^15.5.8
+    react-easy-swipe: ^0.0.21
+  checksum: 8a5b915f140a05425554a0c108c60a0b103dae49808486d39147df09c832ad712c7d7f4a66f0d0c39529ca095b4a327f0cc440d91b5f7a39ab13076931f74bd0
   languageName: node
   linkType: hard
 
@@ -4260,7 +4299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.8.4":
+"typescript@npm:^4.8.4":
   version: 4.8.4
   resolution: "typescript@npm:4.8.4"
   bin:
@@ -4270,7 +4309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.8.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.8.4#~builtin<compat/typescript>":
   version: 4.8.4
   resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=493e53"
   bin:
