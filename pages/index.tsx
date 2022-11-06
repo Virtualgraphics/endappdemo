@@ -7,8 +7,11 @@ const HomePage: NextPage = () => {
     <Default pageName="Home">
       <Home />
     </Default>
+
     
+
   );
 };
+
 
 export default HomePage;

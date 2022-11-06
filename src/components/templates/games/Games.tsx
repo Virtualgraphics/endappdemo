@@ -1,24 +1,24 @@
 import { FC, useEffect } from 'react';
-import { Container, Stack, Box, Text, Flex, Heading, useColorModeValue as mode } from '@chakra-ui/react';
+import { Container, Stack, Box, Text, Flex, Heading, Icon, useColorModeValue as mode } from '@chakra-ui/react';
+
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import { Feature } from 'components/templates/feature';
+
 
 const Games = () => {
  
     return (
-      <Box w="100%" > <Flex align="center" justify="center">
-      <Heading
-                    as="h1"
-                    size="xl"
-                    color={mode('blue.600', 'blue.300')}
-                    mt="8"
-                    fontWeight="extrabold"
-                    letterSpacing="tight"
-                  >
-                   Immerse yourself in our games!
-                  </Heading>
-                  
-        </Flex>
+      <Box w="100%" >
+      
+       <Flex>
+
+       <Feature />
+       </Flex>
       </Box>
     );
   };
+
+  
   
   export default Games;

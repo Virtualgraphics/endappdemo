@@ -2,6 +2,7 @@ import {} from '@chakra-ui/react';
 import { Container, Stack, Box, Text, Center, Flex, AspectRatio, Wrap, Heading, useColorModeValue as mode } from '@chakra-ui/react';
 import { ContentGrid } from 'components/templates/contentgrid';
 import { Vote } from 'components/templates/vote';
+import { CheckBox } from 'components/templates/checkbox';
 
 const Animation = () => {
 
@@ -37,7 +38,7 @@ sx={{
 </Flex>
 
 <Flex align="center" justify="center">
-        <Vote/>
+        <CheckBox/>
         
         </Flex>
 
