@@ -14,9 +14,9 @@ import { Container, Stack, Box, Text, Flex, Heading, useColorModeValue as mode }
 <Box w="100%" > <Flex align="center" justify="center">
 <Heading
               as="h1"
-              size="xl"
+              size="md"
               color={mode('blue.600', 'blue.300')}
-              mt="8"
+              mt="0"
               fontWeight="extrabold"
               letterSpacing="tight"
             >

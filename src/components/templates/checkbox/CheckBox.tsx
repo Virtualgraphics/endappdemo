@@ -3,7 +3,7 @@ import * as React from 'react'
 import { CheckboxCard, CheckboxCardGroup } from './CheckboxCardGroup'
 
 const CheckBox = () => (
-  <Box as="section" maxW="100%" bg="bg-surface" py={{ base: '4', md: '8' }}>
+  <Box as="section" maxW="100%"  py={{ base: '4', md: '8' }}>
     <Container maxW="lg">
       <CheckboxCardGroup defaultValue={['one', 'two']} spacing="3">
         {['one', 'two', 'three'].map((option) => (

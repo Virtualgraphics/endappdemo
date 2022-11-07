@@ -18,19 +18,21 @@ const NFTMint= () => {
    return (
     <Box w="100%" > <Flex align="center" justify="center">
       <Heading
-                    as="h1"
-                    size="xl"
+                  
+                    size="md"
                     color={mode('blue.600', 'blue.300')}
                     mt="8"
+                  
                     fontWeight="extrabold"
                     letterSpacing="tight"
                   >
                    Mint your NFT
                   </Heading>
                   </Flex>
-        <Box py={{ base: '12', md: '24' }}>
+        <Box py={{ base: '12', md: '12' }}>
     <Container
       maxW="md"
+      mb="20"
       py={{ base: '0', sm: '8' }}
       px={{ base: '4', sm: '10' }}
       bg={useBreakpointValue({ base: 'transparent', sm: 'bg-surface' })}
@@ -46,7 +48,7 @@ const NFTMint= () => {
           </Stack>
         </Stack>
         <Stack spacing="6" align="center">
-          <Text fontSize="md" color="muted" >
+          <Text fontSize="xl" color="muted" >
             Available Mints
           </Text>
           
@@ -56,7 +58,7 @@ const NFTMint= () => {
           </Stack>
         </Stack>
         <Stack spacing="0.5" align="center">
-          <Text fontSize="sm" color="muted">
+          <Text fontSize="md" color="muted">
            You can mint up to 5 NFTs
           </Text>
           

@@ -10,7 +10,7 @@ const Animation = () => {
       <Box w="100%" > <Flex align="center" justify="center">
       <Heading
                     as="h1"
-                    size="xl"
+                    size="md"
                     color={mode('blue.600', 'blue.300')}
                     mt="8"
                     fontWeight="extrabold"
@@ -29,7 +29,7 @@ as='video'
 controls
 
 src=''
-poster='https://www.virtual-graphics.ch/wp-content/uploads/2022/10/km_trailer01_thumb960.jpg'
+poster='https://www.virtual-graphics.ch/wp-content/uploads/2022/11/km_thumb720.jpg'
 
 objectFit='contain'
 sx={{

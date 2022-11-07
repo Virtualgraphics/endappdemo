@@ -18,8 +18,8 @@ import {
   const ContentGrid = () => {
     const isMobile = useBreakpointValue({ base: true, md: false })
     return (
-      <Box bg="bg-surface">
-        <Container maxW="60%" marginTop={0} marginBottom ={10}>
+      <Box >
+        <Container maxW="70%" marginTop={0} marginBottom ={10}>
           <Stack spacing={{ base: '12', md: '16' }}>
             <Stack direction="row" justify="space-between">
               <Stack spacing={{ base: '4', md: '5' }}>

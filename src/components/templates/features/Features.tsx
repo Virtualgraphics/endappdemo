@@ -13,8 +13,8 @@ import {
   import { features } from './data'
   
   const Features = () => (
-    <Box maxW="100%" as="section" bg="bg-surface">
-      <Container maxW="60%" marginTop={20} marginBottom ={10}>
+    <Box maxW="100%" as="section" >
+      <Container  py={{ base: '16', md: '24' }}>
         <Stack spacing={{ base: '12', md: '16' }}>
           <Stack spacing={{ base: '4', md: '5' }} align="center" textAlign="center">
             <Stack spacing="3">

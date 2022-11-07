@@ -28,7 +28,7 @@ function Carousel() {
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
+  const top = useBreakpointValue({ base: '70%', md: '50%' });
   const side = useBreakpointValue({ base: '30%', md: '10px' });
 
   // These are the images used in the slide
@@ -41,9 +41,9 @@ function Carousel() {
 
   return (
     <Box
-    maxW="60%" marginTop={0} marginBottom ={10}
+    maxW="70%" marginTop={0} marginBottom ={10}
       position={'relative'}
-      height={'700px'}
+      height={'800px'}
       width={'full'}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
@@ -89,7 +89,7 @@ function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'2xl'}
+            height={'3xl'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

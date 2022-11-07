@@ -23,7 +23,7 @@ const Webtoons = () => {
         <Stack direction={{ base: 'column', md: 'row' }} spacing="4" mt="8" > 
       <Heading
                     as="h1"
-                    size="xl"
+                    size="md"
                     color={mode('blue.600', 'blue.300')}
                     mt="0"
                     mb="10"

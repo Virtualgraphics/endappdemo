@@ -7,7 +7,7 @@ const Community = () => {
       <Box   maxW="100%" > <Flex align="center" justify="center">
       <Heading
                     as="h1"
-                    size="xl"
+                    size="md"
                     color={mode('blue.600', 'blue.300')}
                     mt="8"
                     fontWeight="extrabold"

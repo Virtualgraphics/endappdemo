@@ -3,8 +3,8 @@ import * as React from 'react'
 import * as logos from './Logos'
 
 const LogoGrid = () => (
-  <Box bg="bg-accent" color="on-accent" >
-    <Container maxW="60%" marginTop={0} marginBottom ={10}>
+  <Box >
+    <Container py={{ base: '12', md: '16' }}>
       <Stack spacing="8">
         <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="bold" textAlign="center">
           These and other companies trust us

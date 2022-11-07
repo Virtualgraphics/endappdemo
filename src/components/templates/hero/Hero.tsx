@@ -26,8 +26,8 @@ import {
   const Hero = () => {
     return (
 
-      <Box as="section" bg={mode('gray.50', 'gray.800')} margin={0} pt="30" pb="24">
-      <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
+      <Box as="section"  margin={0} pt="7" pb="24">
+      <Box maxW={{ base: 'xl', md: '7xl' }}  mx="auto" px={{ base: '6', md: '8' }}>
         <Stack
           direction={{ base: 'column', lg: 'row' }}
           spacing={{ base: '3rem', lg: '2rem' }}

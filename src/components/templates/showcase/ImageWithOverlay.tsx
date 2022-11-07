@@ -53,7 +53,7 @@ import {
         >
           <Stack spacing={spacing}>
             <Stack spacing="4">
-              <Heading size="lg" color="white">
+              <Heading size="md" color="white">
                 {title}
               </Heading>
               {description && (
